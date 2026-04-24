@@ -25,7 +25,8 @@ elif menu == "Halaman Data":
     year = select_year()
     df = load_data()
     df_filtered = filter_data(df, year)
-    show_data(df_filtered)       
+    show_data(df_filtered) 
+    kolomm()     
 
 # footer
 st.markdown("---")

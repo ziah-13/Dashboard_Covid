@@ -75,24 +75,24 @@ def pie_chart1(df):
     
     st.plotly_chart(fig, use_container_width=True)
 
-# def kolom(df=None):
-#     # jika tidak dikirim df dari app.py, pakai load_data()
-#     if df is None:
-#         df = load_data()
+def kolomm(df=None):
+    # jika tidak dikirim df dari app.py, pakai load_data()
+    if df is None:
+        df = load_data()
 
-#     kolom_tampil = [
-#         "Location",
-#         "New Cases",
-#         "New Deaths",
-#         "New Recovered",
-#         "New Active Cases",
-#         "Total Cases",
-#         "Total Deaths",
-#         "Total Recovered"
-#     ]
-#     df_filtered = df[kolom_tampil]
-#     st.subheader("📋 Data Kolom Tertentu")
-#     st.dataframe(df_filtered)
+    kolom_tampil = [
+        "Location",
+        "New Cases",
+        "New Deaths",
+        "New Recovered",
+        "New Active Cases",
+        "Total Cases",
+        "Total Deaths",
+        "Total Recovered"
+    ]
+    df_filtered = df[kolom_tampil]
+    st.subheader("📋 Data Kolom Tertentu")
+    st.dataframe(df_filtered)
 
 
 # footer 
