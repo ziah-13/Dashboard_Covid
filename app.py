@@ -14,9 +14,13 @@ if menu == "Home":
     judul()
     year = select_year()
     df = load_data()
-    df_filtered = filter_data(df, year)
+    location = select_location(df)
+    df_filtered = filter_data(df, year, location)
     kolom(df_filtered)
     pie_chart1(df_filtered)
+    bar_chart1(df_filtered)
+    bar_chart2(df_filtered)
+    map_chart(df_filtered)
 
 
 # halaman data
@@ -28,10 +32,5 @@ elif menu == "Halaman Data":
     show_data(df_filtered) 
     kolomm()     
 
-# footer
-st.markdown("---")
-st.markdown(
-    "<center>© 2026 Mifthahul Fauziah - NPM 184240008</center>",
-    unsafe_allow_html=True
-)
+st.caption("© 2026 Mifthahul Fauziah - NPM 184240008")
 
